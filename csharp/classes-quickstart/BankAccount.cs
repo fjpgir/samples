@@ -73,7 +73,7 @@ namespace classes
             report.AppendLine("Date\t\tAmount\tNote");
             foreach (var item in allTransactions)
             {
-                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}\n");
             }
 
             return report.ToString();
